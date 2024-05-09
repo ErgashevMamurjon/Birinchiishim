@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Travel</title>
+</head>
+<body>
+    <header class="flex  justify-around items-center pt-[50px]">
+        <div  data-aos="zoom-in">
+            <img src="./imges/logo-1.svg" alt="">
+        </div>
+         <ul class="flex gap-[20px] items-center font-[Inter] font-normal text-[#B8BECD]">
+            <li data-aos="fade-up">
+                <a class="hover:text-black "  href="#">Home</a>
+            </li>
+            <li data-aos="fade-down">
+                <a class="hover:text-black " href="#">Destinations</a>
+            </li>
+            <li data-aos="fade-up">
+                <a class="hover:text-black "  href="#">About</a>
+            </li>
+            <li data-aos="fade-down">
+                <a class="hover:text-black "  href="#">Partner</a>
+            </li>
+            <li data-aos="zoom-in">
+                <button type="button" class="w-[132px] text-[#FB8F1D] hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Login</button>
+            </li>
+            <li data-aos="zoom-in-up">
+                <button type="button" class="w-[132px] text-[#FB8F1D] hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Register</button>
+            </li>
+         </ul>
+    </header>
+    <main>
+        <section data-aos="fade-up"
+        data-aos-duration="3000" style="background-image: url(./imges/back-fon.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 95vh;
+        margin-top: 72px;">
+        <h1 style="font-family:Playfair Display serif" class="font-bold text-[64px] text-[#202336] pl-[189px]">
+            Explore and <br>Travel
+        </h1>
+        <p class="font-[Inter] font-semibold text-[22px] pt-[74px] pl-[189px]">Holiday finder</p>
+        <div class="bg-[#202336]  w-[32px] h-[2px] ml-[189px] mt-[11px]"></div>
+<div class="ml-[191px] flex gap-[30px] mt-[48px]">       
+    <form class="w-[220px]">
+        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option selected>Location</option>
+          <option value="US">Uzbekistan</option>
+          <option value="CA">London</option>
+          <option value="FR">China</option>
+          <option value="DE">Kazakistan</option>
+        </select>
+    </form>
+    <form class="w-[220px]">
+        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option selected>Activity</option>
+          <option value="US">GOOD </option>
+          <option value="CA">Bed</option>
+          <option value="FR">Very Good</option>
+        </select>
+    </form>
+</div>
+<div class="ml-[191px] flex gap-[30px] mt-[48px]">       
+        <form class="w-[220px]">
+            <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              <option selected>Grade</option>
+              <option value="DE">★</option>
+              <option value="DE">★★</option>
+              <option value="FR">★★★</option>
+              <option value="CA">★★★★</option>
+              <option value="US">★★★★★</option>
+            </select>
+        </form>
+        <form class="w-[220px]">
+            <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              <option selected>Date</option>
+              <option value="US">2022 </option>
+              <option value="CA">2023</option>
+              <option value="FR">2024 </option>
+            </select>
+        </form>
+</div>
+<button type="button" class=" w-[190px] ml-[190px] mt-[47px] text-[#FB8F1D] hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Explore</button>
+        </section>
+    </main>
+    <section data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500" class="flex ml-[141px]  gap-[202px] mt-[286px] mb-[162px]">
+        <div>
+          <img src="./imges/parashut-img-boy.png" alt="">
+        </div>
+        <div class="mt-[100px]">
+          <p style="font-family:Playfair Display ;" class="mb-[20px]  text-[36px] font-bold">
+            A new way to explore the <br> world 
+          </p>
+          <p class="text-[#7D7987] text-[Mulish] font-light text-[17px]">For decades travellers have reached for Lonely Planet <br> books when looking to plan and execute their perfect <br> 
+            trip, but now, they can also let Lonely Planet Experiences <br> lead the way</p>
+            <button type="button" class=" w-[190px]  mt-[47px] text-[#FB8F1D] hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Learn more</button>
+        </div>
+    </section>
+    <section data-aos="fade-up"
+    data-aos-duration="3000" class="pt-[50px] pb-[30px]">
+        <p style="
+        font-family: Playfair Display;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: left;
+        " class="pl-[295px] pb-[56px]  ml-[-85px]">Featured destinations</p>
+        <div class="flex justify-center gap-[35px]">
+         <div style="
+         background-image: url(./imges/image\ 4.svg);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         width: 261px;
+         height: 331px;
+         border-radius: 10px;"><div style="border-radius: 5px;" class="mt-[280px] w-[120px] h-[56px] bg-white">
+         <p><mark style="background-color: transparent; font-size: 17px; font-weight: 500;" class="text-black">Raja Ampat</mark> Indonesia</p></div></div>
+         <div style="
+         background-image: url(./imges/Screen\ Shot\ 2020-02-14\ at\ 4.36\ 1\ \(1\).svg);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         width: 261px;
+         height: 331px;
+         border-radius: 10px;"><div style="border-radius: 5px;" class="mt-[280px] w-[120px] h-[56px] bg-white">
+         <p><mark style="background-color: transparent; font-size: 17px; font-weight: 500;" class="text-black">Fanjingshan</mark> China</p></div></div>
+         <div style="
+         background-image: url(./imges/Screen\ Shot\ 2020-02-15\ at\ 11.04\ 1.svg);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         width: 261px;
+         height: 331px;
+         border-radius: 10px;"><div style="border-radius: 5px;" class="mt-[280px] w-[120px] h-[56px] bg-white">
+         <p><mark style="background-color: transparent; font-size: 17px; font-weight: 500;" class="text-black">Vevey</mark> Switzerland</p></div></div>
+         <div style="
+         background-image: url(./imges/Screen\ Shot\ 2020-02-15\ at\ 11.10\ 1.svg);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         width: 261px;
+         height: 331px;
+         border-radius: 10px;"><div style="border-radius: 5px;" class="mt-[280px] w-[120px] h-[56px] bg-white">
+         <p><mark style="background-color: transparent; font-size: 17px; font-weight: 500;" class="text-black">Skadar</mark> Montenegro</p></div></div>
+        </div>
+    </section>
+    <section data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500" class="flex ml-[241px]  gap-[202px] mt-[286px] mb-[162px]">
+        <div class="mt-[100px]">
+          <p style="font-family:Playfair Display ;" class="mb-[20px]  text-[36px] font-bold">
+            Guides by Thousand <br>
+            Sunny
+          </p>
+          <p class="text-[#7D7987] text-[Mulish] font-light text-[17px]">Packed with tips and advice from our on-the-ground <br> experts, our city guides app (iOS and Android) is the <br> ultimate resource before and during a trip.</p>
+            <button type="button" class=" w-[190px]  mt-[47px] text-[#FB8F1D] hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Download</button>
+        </div>
+        <div>
+            <img src="./imges/bola-img.png" alt="bola">
+          </div>
+    </section>
+    <section data-aos="fade-up"
+    data-aos-duration="3000" class="flex ml-[240px]">
+        <div>
+            <p  style=" font-family: Playfair Display;" class="w-[384px] font-bold leading-[50px]font-bold mb-[145px] text-[36px]">Testimonials</p>
+            <p style="border: none;" class="mb-[30px] text-[25px]">⭐⭐⭐⭐⭐</p>
+            <p class="mb-[40px] text-[Muli] font-normal text-[24px] leading-[36px] text-[#000000]">“Quisque in lacus a urna fermentum <br> euismod. Integer mi nibh, dapibus ac <br> scelerisque eu, facilisis quis purus. Morbi <br> blandit sit amet turpis nec”</p>
+            <p style="font-family: Inter; font-weight: 600;" class="text-[18px] leading-[48px]">Edward Newgate</p>
+            <p class="mb-[313px] mt-[10px]text-[18px] leading-[48px]" style="font-family: Inter; font-weight: 400;">Founder Circle</p>
+        </div>
+        <div style="background-image: url(./imges/bbaallaa2.png);  background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 416px;
+        height:522px;" class="ml-[200px] mt-[105px]">
+        </div>
+    </section>
+<section data-aos="fade-down"
+data-aos-easing="linear"
+data-aos-duration="1500">
+<p  style=" font-family: Playfair Display;" class="w-[384px] font-bold leading-[50px] mb-[56px] ml-[240px] text-[36px]">Trending stories</p>
+<div class="flex">
+<div class="ml-[240px]">
+        <div>
+            <div>
+                <img class="w-[285px] h-[330px]" src="./imges/tinchlik hotir.png" alt="">
+            </div>
+            <div>
+                <p class="mt-[13px] mb-[13px] text-[Inter] font-bold text-[19px]">The many benefits of  <br>
+                    taking a healing holiday</p>
+                <p class=" text-[Inter] font-normal text-[15px] text-[#7D7987] mb-[23px]">
+                    ‘Helaing holidays’ are on the rise  <br>
+        tohelp maximise your health and <br> happines...
+                </p>
+                <p class="mb-[270px] text-[#FB8F1D] text-[Inter] font-semibold">Read more</p>
+            </div>
+        </div>
+</div>
+<div class="ml-[20px]">
+            <div>
+                <div>
+                    <img style=" width: 285px; height: 430px;" src="./imges/i1.png" alt="">
+                </div>
+                <div class="mt-[-95px]">
+                    <p class="mt-[13px] mb-[13px]  text-[Inter] font-bold text-[19px]">The many benefits of  <br>
+                        taking a healing holiday</p>
+                    <p class=" text-[Inter] font-normal text-[15px] text-[#7D7987] mb-[23px]">
+                        ‘Helaing holidays’ are on the rise  <br>
+            tohelp maximise your health and <br> happines...
+                    </p>
+                    <p class="mb-[270px] text-[#FB8F1D] text-[Inter] font-semibold">Read more</p>
+                </div>
+            </div>
+</div>
+<div class="ml-[20px]">
+                <div>
+                    <div>
+                        <img style=" width: 285px; height: 430px;" src="./imges/sh1.png" alt="">
+                    </div>
+                    <div  class="mt-[-95px]">
+                        <p class="mt-[13px] mb-[13px] text-[Inter] font-bold text-[19px]">The many benefits of  <br>
+                            taking a healing holiday</p>
+                        <p class=" text-[Inter] font-normal text-[15px] text-[#7D7987] mb-[23px]">
+                            ‘Helaing holidays’ are on the rise  <br>
+                tohelp maximise your health and <br> happines...
+                        </p>
+                        <p class="mb-[270px] text-[#FB8F1D] text-[Inter] font-semibold">Read more</p>
+                    </div>
+                </div>
+</div>
+<div class="ml-[20px]">
+                    <div>
+                        <div>
+                            <img style=" width: 285px; height: 430px;" src="./imges/s1.png" alt="">
+                        </div>
+                        <div  class="mt-[-95px]">
+                            <p class="mt-[13px] mb-[13px] text-[Inter] font-bold text-[19px]">The many benefits of  <br>
+                                taking a healing holiday</p>
+                            <p class=" text-[Inter] font-normal text-[15px] text-[#7D7987] mb-[23px]">
+                                ‘Helaing holidays’ are on the rise  <br>
+                    tohelp maximise your health and <br> happines...
+                            </p>
+                            <p class="mb-[270px] text-[#FB8F1D] text-[Inter] font-semibold">Read more</p>
+                        </div>
+                    </div>
+</div>
+</div>
+</section>
+<section data-aos="fade-up"
+data-aos-duration="3000" style="width: 1518px; height: 492px;
+" class="bg-[#F9F9FB]">
+    <div class="flex justify-center">
+      <div class="pt-[195px]">
+        <div class="pb-[26px]"><img src="./imges/logo-1.svg" alt=""></div>
+        <p class="text-[Muli] text-[#848484]">Plan and book your perfect trip with <br> expert advice, travel tips destination <br> information from us</p>
+        <p class="pt-[55px] pb-[81px] text-[Muli] text-[#848484]">©2020 Thousand Sunny. All rights reserved</p>
+      </div>
+      <div class=" pt-[190px] ml-[108px]">
+        <p class="text-[Muli] text-[#000000] font-bold text-[19px] pb-[20px]">Destinations</p><p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]">Africa</p>        <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]">Antarctica</p>        <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]">Asia</p>  <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]">Europe</p>        <p class="text-[Muli] text-[#848484] font-light text-[18px]">America</p>
+      </div>
+      <div class=" pt-[190px] ml-[108px]">
+        <p class="text-[Muli] text-[#000000] font-bold text-[19px] pb-[20px]">Shop</p>        <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]">Destination Guides</p>        <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]">Pictorial & Gifts</p>        <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]">Special Offers</p>        <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]">Delivery Times</p>        <p class="text-[Muli] text-[#848484] font-light text-[18px]">FAQs</p>
+      </div>
+      <div class=" pt-[190px] ml-[108px]">
+        <p class="text-[Muli] text-[#000000] font-bold text-[19px] pb-[20px]">Interests</p> <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]">Adventure Travel</p>      <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]">Art And Culture</p>   <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]">Wildlife And Nature</p>        <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]">Family Holidays</p>      <p class="text-[Muli] text-[#848484] font-light text-[18px]">Food And Drink</p>
+      </div>
+    </div>
+    <hr class="w-[1219px] ml-[191px]">
+    <div class="flex pt-[30px] justify-center  pb-[32px]">
+      <img src="./imges/ilovalar.svg" alt="">
+    </div>
+      </section>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
+
